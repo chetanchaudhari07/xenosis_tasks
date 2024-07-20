@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 0 20px;
+}
+
+#nav img {
+    width: 100px;
+    height: 80px;
+}
+
+#nav > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#searchproduct {
+    display: flex;
+    align-items: center;
+}
+
+#search, #signin, #product {
+    height: 30px;
+}
+
+button {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 50px 20px 20px;
+}
+
+#container > div {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+#container img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a, .footer-social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 1200px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    #nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    #nav > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav img {
+        width: 80px;
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    #nav > div {
+        gap: 5px;
+    }
+
+    #nav img {
+        width: 60px;
+    }
+
+    button {
+        padding: 0 5px;
+    }
+}

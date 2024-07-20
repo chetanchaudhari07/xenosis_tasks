@@ -1,0 +1,118 @@
+#box{
+    /* border: 1px solid; */
+    text-align: center;
+    height: auto;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#midbox{
+    /* border: 1px solid; */
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    
+
+}
+
+#midbox  > div{
+    /* border: 1px solid; */
+   width: 500px;
+   text-align: center;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+
+}
+
+.inner1 > div{
+   /* border: 1px solid; */
+   height: 50px;
+   text-align: center;
+   background-color: orange;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+   border-radius: 10px;
+}
+
+.inner2 > div{
+    /* border: 1px solid; */
+    height: 50px;
+    background-color: orange;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+
+ }
+
+ .inner3 > div{
+    /* border: 1px solid; */
+    height: 50px;
+    text-align: center;
+    background-color: orange;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+ }
+
+
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: relative;
+    
+}
+
+.footer-links a, .footer-social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+    #box {
+        padding: 10px;
+    }
+
+    
+
+    footer {
+        padding: 15px;
+    }
+
+    .footer-social img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inner1 > div,
+    .inner2 > div,
+    .inner3 > div {
+        height: 40px;
+    }
+
+    .footer-links a,
+    .footer-social a {
+        margin: 0 5px;
+    }
+
+  #midbox{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
