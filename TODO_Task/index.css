@@ -1,0 +1,115 @@
+
+
+
+#box {
+    /* border: 1px solid rgb(222, 21, 21); */
+    width: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+   
+
+
+}
+
+#box1 {
+    /* border: 1px solid brown; */
+    width: 40%;
+   padding: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+
+
+#box2-container{
+    /* border: 1px solid yellow; */
+    width: 30%;
+    padding: 20px;
+    
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#write{
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.box {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.taskListcontainer {
+    flex-grow: 1;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 767px) {
+    #box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #box1,
+    #box2-container {
+        width: 90%;
+    }
+
+    #write,
+    button {
+        width: 90%;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
