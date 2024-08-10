@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <script src="https://kit.fontawesome.com/f88b623e7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+
+    <nav id="nav-menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">FITNESS=LIFE</label>
+
+
+
+        <ul>
+            <li><a class="nav-link home" href="#home">Home</a></li>
+            <li><a class="nav-link about" href="#contact1">About US</a></li>
+            <li><a class="nav-link skills" href="#trainer">services</a></li>
+            <li><a class="nav-link projects" href="#Membership">Membership Plan</a></li>
+            <li><a class="nav-link cantact" href="#trainer">Trainers</a></li>
+            <li><a class="nav-link cantact" href="#testimonoals">Testimonials</a></li>
+            <li><a class="nav-link cantact" href="#contact">Contact</a></li>
+            <li><a class="nav-link cantact" href="./blog.html">Blog</a></li>
+        </ul>
+
+
+
+
+
+    </nav>
+
+    <div id="home">
+
+        <div class="heading">
+            <h1>THE ONLY IMPOSSIBLE JOURNEY IS THE ONE YOU NEVER BEGIN</h1>
+        </div>
+
+        <div class="join">
+            <button><a href="#contact1">Join with us</a></button>
+        </div>
+
+    </div>
+
+    <div id="trainer">
+
+        <div class="trainer-gym">
+            <h1>Certified Personal Trainer</h1>
+            <br>
+            <div class="certified">[Certification Body, e.g., ACE, NASM, ISSA]</div>
+            <br>
+            <div class="description">
+                <p> a passionate and dedicated fitness professional with a deep commitment to helping clients reach
+                    their fitness goals. With [number] years of experience, [he/she/they] has worked with a diverse
+                    range of clients, from beginners to advanced athletes, tailoring each workout to meet their unique
+                    needs and objectives.</p>
+            </div>
+            <br>
+            <div class="shedule"><button onclick="bookShedule()">Book Shedule</button></div>
+        </div>
+        <div class="trainer-cardio">
+            <h1>Certified Personal cardio Trainer</h1>
+            <br>
+            <div class="certified">[Certification Body, e.g., ACE, NASM, ISSA]</div>
+            <br>
+            <div class="description">
+                <p> a passionate and dedicated fitness professional with a deep commitment to helping clients reach
+                    their fitness goals. With [number] years of experience, [he/she/they] has worked with a diverse
+                    range of clients, from beginners to advanced athletes, tailoring each workout to meet their unique
+                    needs and objectives.</p>
+            </div>
+            <br>
+            <div class="shedule"><button onclick="bookShedule()">Book Shedule</button></div>
+
+        </div>
+        <div class="trainer-zumbaa">
+            <h1>Certified Personal Zumbaa Trainer</h1>
+            <br>
+            <div class="certified">[Certification Body, e.g., ACE, NASM, ISSA]</div>
+            <br>
+            <div class="description">
+                <p> a passionate and dedicated fitness professional with a deep commitment to helping clients reach
+                    their fitness goals. With [number] years of experience, [he/she/they] has worked with a diverse
+                    range of clients, from beginners to advanced athletes, tailoring each workout to meet their unique
+                    needs and objectives.</p>
+            </div>
+            <br>
+            <div class="shedule"><button onclick="bookShedule()">Book Shedule</button></div>
+        </div>
+
+        <div id="calenderModal" style="display: none; ">
+            <h2>Book Your Schedule</h2>
+
+            <label for="appointmentDate">Choose a date:</label>
+            <input type="date" id="appointmentDate">
+            <br><br>
+            <label for="appointmentTime">Choose a time:</label>
+            <input type="time" id="appointmentTime">
+            <br><br>
+            <button onclick="confirmBooking()">Confirm Booking</button>
+        </div>
+
+
+    </div>
+
+    <div id="Membership">
+
+        <div class="1month">
+            <h1>1-Month Membership Plan</h1>
+            <br>
+            <div class="price">Price: $XX.XX per month</div>
+            <br>
+            <div class="description">
+                <ul>
+                    <li>Unlimited Access: Enjoy full access to all gym facilities, including cardio machines,
+                        weightlifting areas, and more during operating hours.</li>
+                    <li>Group Fitness Classes: Participate in a variety of group classes, such as yoga, spinning, Zumba,
+                        and HIIT, with no additional fees.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="join"><button onclick="checkMembership()">Join</button></div>
+        </div>
+        <div class="3month">
+
+            <h1>6-Month Membership Plan</h1>
+            <br>
+            <div class="price">Price: $XX.XX per month</div>
+            <br>
+            <div class="description">
+                <ul>
+                    <li>Unlimited Access: Enjoy full access to all gym facilities, including cardio machines,
+                        weightlifting areas, and more during operating hours.</li>
+                    <li>Group Fitness Classes: Participate in a variety of group classes, such as yoga, spinning, Zumba,
+                        and HIIT, with no additional fees.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="join"><button onclick="checkMembership()">Join</button></div>
+        </div>
+        <div class="1year">
+
+            <h1>1-Year Membership Plan</h1>
+            <br>
+            <div class="price">Price: $XX.XX per month</div>
+            <br>
+            <div class="description">
+                <ul>
+                    <li>Unlimited Access: Enjoy full access to all gym facilities, including cardio machines,
+                        weightlifting areas, and more during operating hours.</li>
+                    <li>Group Fitness Classes: Participate in a variety of group classes, such as yoga, spinning, Zumba,
+                        and HIIT, with no additional fees.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="join"><button onclick="checkMembership()">Join</button></div>
+        </div>
+
+
+    </div>
+
+    <div id="testimonoals">
+
+        <div class="Alumni">
+            <div>
+                <h1>Client Testimonial</h1>
+            </div>
+            <br>
+            <div>
+
+                <span>
+                    <p>[e.g., Weight Loss, Muscle Gain, Improved Fitness, Rehabilitation]</p>
+                </span>
+            </div>
+            <br>
+            <p>
+                "Joining [Gym Name] has been one of the best decisions I've ever made! I started my fitness journey with
+                [Trainer's Name] because [reason for joining, e.g., I wanted to lose weight, gain strength, improve my
+                health]. In just [number of months/weeks], I've seen incredible results—I've lost [amount of weight],
+                gained [muscle tone/strength], and feel more confident than ever before.
+            </p>
+            <div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="contact1">
+
+        <form id="visitform">
+            <h4>Membership Form</h4>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" style="width:90%;">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email" style="width: 90%;">
+            <br>
+            <br>
+            <label for="message">Message</label>
+
+            <textarea name="message" id="message" style="width:90%;"></textarea>
+            <br>
+
+            <input type="submit" value="submit" style="width:max-content; ">
+
+        </form>
+
+        <div id="cmt">
+            <h3><a href="./member.html" target="_blank"> Check membership</a></h3>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <h4>Contact</h4>
+        <a href=""> <i class="fa-solid fa-phone"></i></i> +91-9168569931</a>
+        <a href="https://www.linkedin.com/in/chetan-chaudhari-97740021b/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i> chetan-chaudhari-97740021b</a>
+        <a href="https://github.com/chetanchaudhari07" target="_blank"> <i class="fa-brands fa-github"></i>
+            chetanchaudhari07</a>
+
+
+    </footer>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
