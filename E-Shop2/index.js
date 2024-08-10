@@ -1,8 +1,8 @@
 
-let  image = [ './image/71_PC._CB568307876_.jpg',
-    './image/611xsDgQ9DL._SX3000_.jpg',
-    './image/D151005745_IN_WLA_AugART24_Gateway_PC_Hero_3000x1200._CB566514818_.jpg',
-    './image/Main-event_V1_Travel_PC_Hero_3000x1200._CB566455694_.jpg',
+let  image = [ './71_PC._CB568307876_.jpg',
+    './611xsDgQ9DL._SX3000_.jpg',
+    './D151005745_IN_WLA_AugART24_Gateway_PC_Hero_3000x1200._CB566514818_.jpg',
+    './Main-event_V1_Travel_PC_Hero_3000x1200._CB566455694_.jpg',
 
 ]
 
